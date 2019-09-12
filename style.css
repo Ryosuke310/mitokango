@@ -67,8 +67,10 @@ header{
     width: 100%;
     padding: 5px 10%;
     border-radius: 20px;
-    color: #fff;
     background: #ff6473;
+}
+.header__inner-content-button > a{
+    color: #fff;
 }
 /* ヘッダーマウスホバー時挙動 */
 .menu {
