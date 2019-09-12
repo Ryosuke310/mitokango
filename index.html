@@ -33,7 +33,7 @@
 						<li><a href="#4">卒業生の声</a></li>
 					</ul>
 					<ul class="header__inner-content">
-						<li><a href="#4">オープンキャンパス日程</a></li>
+						<li><a href="#5">オープンキャンパス日程</a></li>
 					</ul>
 					<ul class="header__inner-content">
 						<li class="header__inner-content-button"><a href="#form">お問い合わせ ></a></li>
@@ -45,7 +45,7 @@
 
 	<div class="top">
 		<div class="top__fv">
-			<img src="./image/fv_pc.png" class="only-desktop">
+			<a href="#form"><img src="./image/fv_pc.png" class="only-desktop"></a>
 			<img src="./image/fv_sp.png" class="only-mobile">
 		</div>
 		<div class="top__inner">
@@ -59,13 +59,13 @@
 			</div>
 			<div class="top__content top__content-under only-desktop">
 				<div class="top__content__inner">
-					<a href="#"><img src="./image/top_info.png"></a>
+					<a href="#form"><img src="./image/top_info.png"></a>
 				</div>
 			</div>
 		</div>
 		<div class="top__content-mobile only-mobile">
 			<div class="top__content__inner">
-				<a href="#"><img src="./image/top_info.png"></a>
+				<a href="#form"><img src="./image/top_info.png"></a>
 			</div>
 		</div>
 	</div>
@@ -77,7 +77,8 @@
 					<h3>看護学科</h3>
 				</div>
 				<div class="mainmessage__cotent-txttop">
-					<h2>笑顔を支える心の通い合う看護師に</h2>
+					<h2 class="only-desktop">笑顔を支える心の通い合う看護師に</h2>
+					<h2 class="only-mobile">笑顔を支える<br>心の通い合う看護師に</h2>
 				</div>
 				<div class="mainmessage__cotent-txtbuttom">
 					<p>一人一人の個性を活かしながら、心の通い合う看護ができる看護師を育てます。
@@ -115,7 +116,8 @@
 					<div class="lpcontent__content-contens-cul">
 						<div class="lpcontent__content-contens-cul-left size-special">
 							<p class="lpcontent__content-contens-cul-left-em"><img src="./image/1.png">年次</p>
-							<p>人と社会<br>を学ぶ</p>
+							<p class="only-desktop">人と社会<br>を学ぶ</p>
+							<p class="only-mobile">人と社会を学ぶ</p>
 						</div>
 						<div class="lpcontent__content-contens-cul-right">
 							<div class="lpcontent__content-contens-cul-right-txt">
@@ -139,7 +141,8 @@
 					<div class="lpcontent__content-contens-cul br">
 						<div class="lpcontent__content-contens-cul-left">
 							<p class="lpcontent__content-contens-cul-left-em"><img src="./image/2.png">年次</p>
-							<p>健康と看護<br>を学ぶ</p>
+							<p class="only-desktop">健康と看護<br>を学ぶ</p>
+							<p class="only-mobile">健康と看護を学ぶ</p>
 						</div>
 						<div class="lpcontent__content-contens-cul-right">
 							<div class="lpcontent__content-contens-cul-right-txt">
@@ -164,7 +167,8 @@
 					<div class="lpcontent__content-contens-cul">
 						<div class="lpcontent__content-contens-cul-left">
 							<p class="lpcontent__content-contens-cul-left-em"><img src="./image/3.png">年次</p>
-							<p>看護の実践力<br>を学ぶ</p>
+							<p class="only-desktop">看護の実践力<br>を学ぶ</p>
+							<p class="only-mobile">看護の実践力を学ぶ</p>
 						</div>
 						<div class="lpcontent__content-contens-cul-right">
 							<div class="lpcontent__content-contens-cul-right-txt">
@@ -334,10 +338,10 @@
 				</div>
 				<div class="lpcontent__content-contens">
 					<div class="lpcontent__content-contens-voice">
-						<p><img src="./image/voice1.png"></p>
-						<p><img src="./image/voice2.png"></p>
-						<p><img src="./image/voice3.png"></p>
-						<p><img src="./image/voice4.png"></p>
+						<p id="js-show-popup1"><img src="./image/voice1.png"></p>
+						<p id="js-show-popup2"><img src="./image/voice2.png"></p>
+						<p id="js-show-popup3"><img src="./image/voice3.png"></p>
+						<p id="js-show-popup4"><img src="./image/voice4.png"></p>
 					</div>
 					<div class="lpcontent__content-contens-txt">
 						<h3>過去の就職先一覧</h3>
@@ -345,6 +349,13 @@
 					</div>
 				</div>
 			</div>
+		</div>
+		<div class="popup" id="js-popup">
+			<div class="popup-inner">
+				<div class="close-btn" id="js-close-btn"><i class="fas fa-times"></i></div>
+				<a href="#"><img src="./img/popup.jpg" alt="ポップアップ画像"></a>
+			</div>
+			<div class="black-background" id="js-black-bg"></div>
 		</div>
 		<div class="lpcontent__inner　w100">
 			<div class="lpcontent__content">
@@ -472,29 +483,32 @@
 						  </tr><br>
 						  <tr>
 							<p class="form-txt">参加希望の学校(<span class="red">*</span>)</p>
-							<td><input type="radio" name="参加希望の学校" value="水戸経理専門学校（医療秘書学科・診療情報管理学科）" onclick="entryChange1();" checked="checked" />
-							  水戸経理専門学校（医療秘書学科・診療情報管理学科）<br />
-							  <input type="radio" name="参加希望の学校" value="水戸経理専門学校（行政情報学科）" onclick="entryChange1();" />
-							  水戸経理専門学校（行政情報学科）<br />
-							  <input type="radio" name="参加希望の学校" value="水戸経理専門学校（経営経理学科）" onclick="entryChange1();" />
-							  水戸経理専門学校（経営経理学科）<br />
-							  <input type="radio" name="参加希望の学校" value="水戸経理専門学校（ブライダル学科）" onclick="entryChange1();" />
-							  水戸経理専門学校（ブライダル学科）<br />
-							  <input type="radio" name="参加希望の学校" value="水戸電子専門学校" onclick="entryChange1();" />
-							  水戸電子専門学校<br />
-							  <input type="radio" name="参加希望の学校" value="水戸自動車大学校" onclick="entryChange1();" />
-							  水戸自動車大学校<br />
-							  <input type="radio" name="参加希望の学校" value="水戸ビューティカレッジ" onclick="entryChange1();" />
-							  水戸ビューティカレッジ<br />
-							  <input type="radio" name="参加希望の学校" value="水戸看護福祉専門学校 看護学科" onclick="entryChange1();" />
+							<td>
+							  <input type="radio" name="参加希望の学校" value="水戸看護福祉専門学校 看護学科" onclick="entryChange1();"  checked="checked"/>
 							  水戸看護福祉専門学校 看護学科<br />
+							  <div class="f-none">
+								<input type="radio" name="参加希望の学校" value="水戸経理専門学校（医療秘書学科・診療情報管理学科）" onclick="entryChange1();" />
+								水戸経理専門学校（医療秘書学科・診療情報管理学科）<br />
+								<input type="radio" name="参加希望の学校" value="水戸経理専門学校（行政情報学科）" onclick="entryChange1();" />
+								水戸経理専門学校（行政情報学科）<br />
+								<input type="radio" name="参加希望の学校" value="水戸経理専門学校（経営経理学科）" onclick="entryChange1();" />
+								水戸経理専門学校（経営経理学科）<br />
+								<input type="radio" name="参加希望の学校" value="水戸経理専門学校（ブライダル学科）" onclick="entryChange1();" />
+								水戸経理専門学校（ブライダル学科）<br />
+								<input type="radio" name="参加希望の学校" value="水戸電子専門学校" onclick="entryChange1();" />
+								水戸電子専門学校<br />
+								<input type="radio" name="参加希望の学校" value="水戸自動車大学校" onclick="entryChange1();" />
+								水戸自動車大学校<br />
+								<input type="radio" name="参加希望の学校" value="水戸ビューティカレッジ" onclick="entryChange1();" />
+								水戸ビューティカレッジ<br />
+							  </div>
 							  </td>
 						  </tr>
 						  <tr id="firstBox">
 							<p class="form-txt">参加希望日(<span class="red">*</span>)</p>
 							<td><select name="参加希望日" size="1">
 							<option value="">選択してください</option>
-								<option value="5／11（土）">5／11（土）</option>
+								<!-- <option value="5／11（土）">5／11（土）</option>
 								<option value="5／26（日）">5／26（日）</option>
 								<option value="6／8（土）">6／8（土）</option>
 								<option value="6／16（日）">6／16（日）</option>
@@ -510,13 +524,13 @@
 								<option value="8／23（金）">8／23（金）</option>
 								<option value="8／25（日）">8／25（日）</option>
 								<option value="9／7（土）">9／7（土）</option>
-								<option value="9／28（土）">9／28（土）</option>
+								<option value="9／28（土）">9／28（土）</option> -->
 								<option value="10／12（土）">10／12（土）</option>
 								<option value="11／10（日）">11／10（日）</option>
-								<option value="12／7（土）">12／7（土）</option>
+								<!-- <option value="12／7（土）">12／7（土）</option> -->
 								<option value="1／25（土）">1／25（土）</option>
 								<option value="2／22（土）">2／22（土）</option>
-								<option value="3／15（日）">3／15（日）</option>
+								<!-- <option value="3／15（日）">3／15（日）</option> -->
 							</select></td>
 						  </tr><br>
 						  <tr id="secondBox">
@@ -616,6 +630,98 @@ var mySwiper = new Swiper('.swiper-container', {
 		clickable: true
 	}
 });
+</script>
+<script>
+function popupImage() {
+  var popup = document.getElementById('js-popup');
+  if(!popup) return;
+
+  var blackBg = document.getElementById('js-black-bg');
+
+  var blackBg = document.getElementById('js-black-bg');
+  var closeBtn = document.getElementById('js-close-btn');
+  var showBtn = document.getElementById('js-show-popup1');
+
+  closePopUp(blackBg);
+  closePopUp(closeBtn);
+  closePopUp(showBtn);
+  function closePopUp(elem) {
+    if(!elem) return;
+    elem.addEventListener('click', function() {
+      popup.classList.toggle('is-show');
+    });
+  }
+}
+popupImage();
+</script>
+<script>
+function popupImage() {
+	var popup = document.getElementById('js-popup');
+	if(!popup) return;
+
+	var blackBg = document.getElementById('js-black-bg');
+
+	var blackBg = document.getElementById('js-black-bg');
+	var closeBtn = document.getElementById('js-close-btn');
+	var showBtn = document.getElementById('js-show-popup2');
+
+	closePopUp(blackBg);
+	closePopUp(closeBtn);
+	closePopUp(showBtn);
+	function closePopUp(elem) {
+	if(!elem) return;
+	elem.addEventListener('click', function() {
+		popup.classList.toggle('is-show');
+	});
+	}
+}
+popupImage();
+</script>
+<script>
+function popupImage() {
+	var popup = document.getElementById('js-popup');
+	if(!popup) return;
+
+	var blackBg = document.getElementById('js-black-bg');
+
+	var blackBg = document.getElementById('js-black-bg');
+	var closeBtn = document.getElementById('js-close-btn');
+	var showBtn = document.getElementById('js-show-popup3');
+
+	closePopUp(blackBg);
+	closePopUp(closeBtn);
+	closePopUp(showBtn);
+	function closePopUp(elem) {
+	if(!elem) return;
+	elem.addEventListener('click', function() {
+		popup.classList.toggle('is-show');
+	});
+	}
+}
+popupImage();
+</script>
+<script>
+function popupImage() {
+	var popup = document.getElementById('js-popup');
+	if(!popup) return;
+
+	var blackBg = document.getElementById('js-black-bg');
+
+	var blackBg = document.getElementById('js-black-bg');
+	var closeBtn = document.getElementById('js-close-btn');
+	var showBtn = document.getElementById('js-show-popup4');
+
+	closePopUp(blackBg);
+	closePopUp(closeBtn);
+	closePopUp(showBtn);
+	function closePopUp(elem) {
+	if(!elem) return;
+	elem.addEventListener('click', function() {
+		popup.classList.toggle('is-show');
+	});
+	}
+}
+popupImage();
 </script>
 
 </body>
