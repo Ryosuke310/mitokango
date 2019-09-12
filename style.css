@@ -437,6 +437,9 @@ li.menu__single:hover ul.menu__second-level {
     border-radius: 10px;
     box-shadow: 2px 2px 2px #888888;
 }
+.lpcontent__content-addcn-txt-button > a{
+    color: #ffffff;
+}
 .lpcontent__content-contens-voice{
     display: flex;
     flex-wrap: wrap;
