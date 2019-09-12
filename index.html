@@ -383,10 +383,10 @@
 						<a href="#form"><img src="./image/sc4.png"></a>
 						<a href="#form"><img src="./image/sc5.png"></a>
 						<a href="#form"><img src="./image/sc6.png"></a>
-						<a href="#form"><img src="./image/sc7.png"></a>
-						<a href="#form"><img src="./image/sc8.png"></a>
-						<a href="#form"><img src="./image/sc9.png"></a>
-						<a href="#form"><img src="./image/sc10.png"></a>
+						<a href="#form" data-form-type="10／12（土）"><img src="./image/sc7.png"></a>
+						<a href="#form" data-form-type="11／10（日）"><img src="./image/sc8.png"></a>
+						<a href="#form" data-form-type="1／25（土）"><img src="./image/sc9.png"></a>
+						<a href="#form" data-form-type="2／22（土）"><img src="./image/sc10.png"></a>
 					</div>
 					<div class="lpcontent__content-schedule-txt">
 						<h3>開催時間</h3>
@@ -506,32 +506,34 @@
 						  </tr>
 						  <tr id="firstBox">
 							<p class="form-txt">参加希望日(<span class="red">*</span>)</p>
-							<td><select name="参加希望日" size="1">
-							<option value="">選択してください</option>
-								<!-- <option value="5／11（土）">5／11（土）</option>
-								<option value="5／26（日）">5／26（日）</option>
-								<option value="6／8（土）">6／8（土）</option>
-								<option value="6／16（日）">6／16（日）</option>
-								<option value="6／29（土）">6／29（土）</option>
-								<option value="7／13（土）">7／13（土）</option>
-								<option value="7／20（土）">7／20（土）</option>
-								<option value="7／24（水）">7／24（水）</option>
-								<option value="7／27（土）">7／27（土）</option>
-								<option value="7／30（火）">7／30（火）</option>
-								<option value="8／3（土）">8／3（土）</option>
-								<option value="8／6（火）">8／6（火）</option>
-								<option value="8／20（火）">8／20（火）</option>
-								<option value="8／23（金）">8／23（金）</option>
-								<option value="8／25（日）">8／25（日）</option>
-								<option value="9／7（土）">9／7（土）</option>
-								<option value="9／28（土）">9／28（土）</option> -->
-								<option value="10／12（土）">10／12（土）</option>
-								<option value="11／10（日）">11／10（日）</option>
-								<!-- <option value="12／7（土）">12／7（土）</option> -->
-								<option value="1／25（土）">1／25（土）</option>
-								<option value="2／22（土）">2／22（土）</option>
-								<!-- <option value="3／15（日）">3／15（日）</option> -->
-							</select></td>
+							<td>
+								<select name="参加希望日" size="1" value="" class="select-schedules">
+									<option value="">選択してください</option>
+									<!-- <option value="5／11（土）">5／11（土）</option>
+									<option value="5／26（日）">5／26（日）</option>
+									<option value="6／8（土）">6／8（土）</option>
+									<option value="6／16（日）">6／16（日）</option>
+									<option value="6／29（土）">6／29（土）</option>
+									<option value="7／13（土）">7／13（土）</option>
+									<option value="7／20（土）">7／20（土）</option>
+									<option value="7／24（水）">7／24（水）</option>
+									<option value="7／27（土）">7／27（土）</option>
+									<option value="7／30（火）">7／30（火）</option>
+									<option value="8／3（土）">8／3（土）</option>
+									<option value="8／6（火）">8／6（火）</option>
+									<option value="8／20（火）">8／20（火）</option>
+									<option value="8／23（金）">8／23（金）</option>
+									<option value="8／25（日）">8／25（日）</option>
+									<option value="9／7（土）">9／7（土）</option>
+									<option value="9／28（土）">9／28（土）</option> -->
+									<option value="10／12（土）">10／12（土）</option>
+									<option value="11／10（日）">11／10（日）</option>
+									<!-- <option value="12／7（土）">12／7（土）</option> -->
+									<option value="1／25（土）">1／25（土）</option>
+									<option value="2／22（土）">2／22（土）</option>
+									<!-- <option value="3／15（日）">3／15（日）</option> -->
+								</select>
+							</td>
 						  </tr><br>
 						  <tr id="secondBox">
 							<p class="form-txt">参加希望日 看護学科(<span class="red">*</span>)</p>
@@ -609,6 +611,11 @@
 			</div>
 		</div>
 	</div>
+	<script
+  src="https://code.jquery.com/jquery-3.4.1.min.js"
+  integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
+  crossorigin="anonymous"></script>
+	<script src="./script.js"></script>
 
 <script>
 var mySwiper = new Swiper('.swiper-container', {
