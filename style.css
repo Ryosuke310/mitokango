@@ -546,6 +546,14 @@ li.menu__single:hover ul.menu__second-level {
 .footer__content > p{
     color: #fff;
 }
+.swiper-container {
+    width: 100%;
+    height: 250px;
+    margin: 40px 0 0 0!important;
+}
+.swiper-slide > img{
+    width: 100%;
+}
 /* コンテンツここまで */
 /* メディアクエリ996px以下 */
 @media screen and (max-width: 768px) {
@@ -667,7 +675,7 @@ li.menu__single:hover ul.menu__second-level {
         width: 60%;
     }
     .lpcontent__content-contens-cta-button > a > img {
-        width: 90%;
+        width: 100%;
     }
     .lpcontent__content-contens-money-title > p{
         font-size: 1.4rem;

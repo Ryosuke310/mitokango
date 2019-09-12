@@ -6,6 +6,10 @@
 	<link href="https://use.fontawesome.com/releases/v5.6.1/css/all.css" rel="stylesheet">
 	<link rel="stylesheet" href="style.css">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=10.0, user-scalable=yes">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.5.0/css/swiper.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.5.0/css/swiper.min.css">
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.5.0/js/swiper.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.5.0/js/swiper.min.js"></script>
 </head>
 <body>
 	<header>
@@ -225,12 +229,12 @@
 				</div>
 			</div>
 		</div>
-		<div class="lpcontent__inner only-desktop">
+		<div class="lpcontent__inner">
 			<div class="lpcontent__content">
 				<div class="lpcontent__content-title2">
 					<img src="./image/facility-title.png">
 				</div>
-				<div class="lpcontent__content-contens">
+				<div class="lpcontent__content-contens only-desktop">
 					<p><img src="./image/facility1.png"></p>
 					<div class="lpcontent__content-contens-2">
 						<img src="./image/facility2.png">
@@ -252,6 +256,25 @@
 								<img src="./image/facility9.png">
 						</div>
 					</div>
+				</div>
+				<!-- Slider main container -->
+				<div class="swiper-container only-mobile">
+					<!-- Additional required wrapper -->
+					<div class="swiper-wrapper">
+						<!-- Slides -->
+						<div class="swiper-slide"><img src="./image/facility1-sp.png"></div>
+						<div class="swiper-slide"><img src="./image/facility2.png"></div>
+						<div class="swiper-slide"><img src="./image/facility3.png"></div>
+						<div class="swiper-slide"><img src="./image/facility4.png"></div>
+						<div class="swiper-slide"><img src="./image/facility5.png"></div>
+						<div class="swiper-slide"><img src="./image/facility6.png"></div>
+						<div class="swiper-slide"><img src="./image/facility7.png"></div>
+						<div class="swiper-slide"><img src="./image/facility8.png"></div>
+					</div>
+					<!-- If we need pagination -->
+					<div class="swiper-pagination"></div>
+					<!-- If we need scrollbar -->
+					<div class="swiper-scrollbar"></div>
 				</div>
 			</div>
 		</div>
@@ -569,7 +592,27 @@
 		</div>
 	</div>
 
-
+<script>
+var mySwiper = new Swiper('.swiper-container', {
+	centeredSlides: true,
+	slidesPerView: 1,
+	autoplay: {
+		delay: 3000,
+		stopOnLastSlide: false,
+		disableOnInteraction: false,
+		reverseDirection: false
+	},
+	navigation: {
+		nextEl: '.swiper-button-next',
+		prevEl: '.swiper-button-prev'
+	},
+	pagination: {
+		el: '.swiper-pagination',
+		type: 'bullets',
+		clickable: true
+	}
+});
+</script>
 
 </body>
 </html>
