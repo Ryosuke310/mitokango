@@ -712,6 +712,9 @@ li.menu__single:hover ul.menu__second-level {
     .openc-txt {
         padding: 0;
     }
+    .lpcontent__content-schedule-button > a {
+        font-size: 1.2rem;
+    }
     .lpcontent__content-addcn-txt > p {
         margin: 0;
     }
