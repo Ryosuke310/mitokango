@@ -539,13 +539,17 @@ form{
     padding: 20px 5%;
     border: 1px solid #888888;
     border-radius: 10px;
-    line-height: 2.0;
 }
 tr{
     margin: 10px 0;
 }
-th{
-    padding: 0 !important;
+.red{
+    color: red;
+}
+.form-txt{
+    border-left: 1px solid #f26f8b;
+    margin: 10px 0;
+    padding: 0 0 0 5px!important;
 }
 input[type=text] {
 	font: 15px/24px sans-serif;
@@ -557,6 +561,12 @@ input[type=text] {
 	border: 1px solid #1b2538;
 	border-radius: 4px;
 	outline: none;
+}
+input[type=radio]{
+    margin: 8px 0 16px;
+}
+select{
+    margin: 8px 0 16px;
 }
 input[type=text]:focus {
 	border-color: #f26f8b;
@@ -604,6 +614,19 @@ textarea {
 }
 .swiper-slide > img{
     width: 100%;
+}
+.formbutton{
+    width: 35%;
+    padding: 5px 2%;
+    border-radius: 20px;
+    font-weight: bold;
+    box-shadow: 1px 1px 1px #888888;
+}
+.enter{
+    background: #f7a9b9;
+}
+.reset{
+    background: #eeeeee;
 }
 /* コンテンツここまで */
 /* メディアクエリ996px以下 */
@@ -802,7 +825,7 @@ textarea {
         margin: 1px 0 0 0;
     }
     form{
-        width: 100%;
+        width: 95%;
         padding: 20px 2%;
     }
 }

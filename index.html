@@ -416,48 +416,49 @@
 						<p class="t-c"><span class="red">*</span>は必須入力項目です。</p>
 						<div class="table_form01">
 						  <tr>
-							<th>氏名(<span class="red">*</span>)</th>
+							<p class="form-txt">氏名(<span class="red">*</span>)</p>
 							<td><input name="氏名" size="25" type="text" /></td>
 						  </tr>
 						  <tr>
-							<th>ふりがな(<span class="red">*</span>)</th>
+								<p class="form-txt">ふりがな(<span class="red">*</span>)</p>
 							<td><input name="ふりがな" size="30" type="text" /></td>
 						  </tr>
 						  <tr>
-							<th>年齢(<span class="red">*</span>)</th>
+							<p class="form-txt">年齢(<span class="red">*</span>)</p>
 							<td><input name="年齢" size="8" type="text" /></td>
 						  </tr>
 						  <tr>
-							<th>性別(<span class="red">*</span>)</th><br>
+							<p class="form-txt">性別(<span class="red">*</span>)</th><p>
 							<td><input name="性別" value="男性" type="radio" />
 							  男性
 							  <input name="性別" value="女性" type="radio" />
 							  女性</td>
 						  </tr><br>
 						  <tr>
-							<th valign="top">メールアドレス(<span class="red">*</span>)</th>
+							<p class="form-txt top">メールアドレス(<span class="red">*</span>)</p>
 							<td class="inp01"><input name="Email" size="40" type="text" />
 								<br />
-								<span class="red">※携帯メールでも可</span></td>
+								<p style="margin:-16px 0 -16px">※携帯メールでも可</p></td>
 						  </tr><br>
 						  <tr>
-							<th>郵便番号(<span class="red">*</span>)</th>
+							<p class="form-txt">郵便番号(<span class="red">*</span>)</p>
 							<td><input name="郵便番号" type="text" /></td>
 						  </tr>
 						  <tr>
-							<th>住所(<span class="red">*</span>)</th>
+							<p class="form-txt">住所(<span class="red">*</span>)</p>
 							<td class="inp01"><input name="住所" size="50" type="text" /></td>
 						  </tr>
 						  <tr>
-							<th>電話番号(<span class="red">*</span>)</th>
+							<p class="form-txt">電話番号(<span class="red">*</span>)</p>
 							<td><input name="電話番号" type="text" /></td>
 						  </tr>
 						  <tr>
-							<th>学校名(<span class="red">*</span>)</th>
-							<td class="inp01"><input name="学校名" size="50" type="text" /><br />※社会人の方は最終学歴</td>
+							<p class="form-txt">学校名(<span class="red">*</span>)</p>
+							<td class="inp01"><input name="学校名" size="50" type="text" /><br />
+							<p style="margin:-16px 0 -16px">※社会人の方は最終学歴</p></td><br>
 						  </tr>
 						  <tr>
-							<th>学年(<span class="red">*</span>)</th>
+							<p class="form-txt">学年(<span class="red">*</span>)</p>
 							<td><select name="学年" size="1">
 								<option value="４年">４年 </option>
 								<option value="３年" selected="selected">３年 </option>
@@ -465,9 +466,9 @@
 								<option value="１年">１年 </option>
 								<option value="既卒">既卒 </option>
 							</select></td>
-						  </tr>
+						  </tr><br>
 						  <tr>
-							<th>参加希望の学校(<span class="red">*</span>)</th><br>
+							<p class="form-txt">参加希望の学校(<span class="red">*</span>)</p>
 							<td><input type="radio" name="参加希望の学校" value="水戸経理専門学校（医療秘書学科・診療情報管理学科）" onclick="entryChange1();" checked="checked" />
 							  水戸経理専門学校（医療秘書学科・診療情報管理学科）<br />
 							  <input type="radio" name="参加希望の学校" value="水戸経理専門学校（行政情報学科）" onclick="entryChange1();" />
@@ -487,7 +488,7 @@
 							  </td>
 						  </tr>
 						  <tr id="firstBox">
-							<th>参加希望日(<span class="red">*</span>)</th>
+							<p class="form-txt">参加希望日(<span class="red">*</span>)</p>
 							<td><select name="参加希望日" size="1">
 							<option value="">選択してください</option>
 								<option value="5／11（土）">5／11（土）</option>
@@ -516,7 +517,7 @@
 							</select></td>
 						  </tr><br>
 						  <tr id="secondBox">
-							<th>参加希望日 看護学科(<span class="red">*</span>)</th>
+							<p class="form-txt">参加希望日 看護学科(<span class="red">*</span>)</p>
 							<td><select name="参加希望日 看護学科" size="1">
 							<option value="">選択してください</option>
 								<option value="5／26（日）">5／26（日）</option>
@@ -532,7 +533,7 @@
 							</select></td>
 						  </tr>
 						  <tr><br>
-							<th>今回の参加は…(<span class="red">*</span>)</th>
+							<p class="form-txt">今回の参加は…(<span class="red">*</span>)</p>
 							<td><input type="radio" name="今回の参加は" value="全体会からの参加" />
 							  全体会からの参加
 							  <input type="radio" name="今回の参加は" value="体験実習からの参加 " />
@@ -540,7 +541,7 @@
 							  <p class="font_s red">※今年度はじめての参加の方は、「全体会からの参加」をお願いします。</p></td>
 						  </tr>
 						  <tr>
-							<th>オープンキャンパス参加歴(<span class="red">*</span>)</th><br>
+							<p class="form-txt">オープンキャンパス参加歴(<span class="red">*</span>)</p>
 							<td><input type="radio" name="オープンキャンパス参加歴" value="今回が初めて" />
 							  今回が初めて<br />
 							  <input type="radio" name="オープンキャンパス参加歴" value="1回" />
@@ -550,8 +551,8 @@
 							  <input type="radio" name="オープンキャンパス参加歴" value="3回以上" />
 							  3回以上</td>
 						  </tr>
-						  <tr>
-							<th>送迎バス希望の有無(<span class="red">*</span>)</th>
+						  <tr><br>
+							<p class="form-txt">送迎バス希望の有無(<span class="red">*</span>)</p>
 							<td><span class="font_s">※水戸駅南口と八文字学園間の送迎となります。</span><br />
 								<input type="radio" name="送迎バス希望の有無" value="希望する" />
 							  希望する<br />
@@ -559,7 +560,7 @@
 							  希望しない</td>
 						  </tr>
 						  <tr>
-							<th>※ご確認ください！</th>
+							<p style="margin:20px 0 10px 0">※ご確認ください！</p>
 							<td><p class="font_s"><strong>■送迎バスご利用の場合</strong><br />
 							  全体会からの参加　　12:10発　水戸駅南口バス乗り場<br />
 				体験実習からの参加　13:00発　水戸駅南口バス乗り場<br /><br />
@@ -568,7 +569,7 @@
 				体験実習からの参加　13:20〜13:50に水戸看護福祉へ</p></td>
 						  </tr>
 						  <tr>
-							<th>ご質問</th>
+							<p class="form-txt">ご質問</p>
 							<td><textarea name="ご質問" rows="3" cols="35"></textarea></td>
 						  </tr>
 					</div>
@@ -576,9 +577,9 @@
 						<h4>電話によるお申し込みも行っております。</h4>
 						<p>お問合わせ先　029-221-8800（代表）</p>
 						<p>&nbsp;</p>
-						<div align="center">
-						<input name="Submit" value="送信します" type="submit" />
-						<input name="Submit2" value="リセット" type="reset" />
+						<div class="t-c">
+							<input class="enter formbutton" name="Submit" value="送信します" type="submit" />
+							<input class="reset formbutton"  name="Submit2" value="リセット" type="reset" />
 						</div>
 					</form>
 			</div>
