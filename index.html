@@ -412,9 +412,9 @@
 		<div class="lpcontent__inner" id="form">
 			<div class="lpcontent__content">
 					<form method="post" action="apply/mail.php">
-						<p>各専門学校のオープンキャンパスにお気軽に、ご参加ください。<br />下記フォームよりお申し込みください。</p>
-						<p><span class="red">*</span>は必須入力項目です。</p>
-						<table class="table_form01">
+						<p class="t-c">各専門学校のオープンキャンパスにお気軽に、ご参加ください。<br />下記フォームよりお申し込みください。</p>
+						<p class="t-c"><span class="red">*</span>は必須入力項目です。</p>
+						<div class="table_form01">
 						  <tr>
 							<th>氏名(<span class="red">*</span>)</th>
 							<td><input name="氏名" size="25" type="text" /></td>
@@ -428,18 +428,18 @@
 							<td><input name="年齢" size="8" type="text" /></td>
 						  </tr>
 						  <tr>
-							<th>性別(<span class="red">*</span>)</th>
+							<th>性別(<span class="red">*</span>)</th><br>
 							<td><input name="性別" value="男性" type="radio" />
 							  男性
 							  <input name="性別" value="女性" type="radio" />
 							  女性</td>
-						  </tr>
+						  </tr><br>
 						  <tr>
 							<th valign="top">メールアドレス(<span class="red">*</span>)</th>
 							<td class="inp01"><input name="Email" size="40" type="text" />
 								<br />
 								<span class="red">※携帯メールでも可</span></td>
-						  </tr>
+						  </tr><br>
 						  <tr>
 							<th>郵便番号(<span class="red">*</span>)</th>
 							<td><input name="郵便番号" type="text" /></td>
@@ -467,7 +467,7 @@
 							</select></td>
 						  </tr>
 						  <tr>
-							<th>参加希望の学校(<span class="red">*</span>)</th>
+							<th>参加希望の学校(<span class="red">*</span>)</th><br>
 							<td><input type="radio" name="参加希望の学校" value="水戸経理専門学校（医療秘書学科・診療情報管理学科）" onclick="entryChange1();" checked="checked" />
 							  水戸経理専門学校（医療秘書学科・診療情報管理学科）<br />
 							  <input type="radio" name="参加希望の学校" value="水戸経理専門学校（行政情報学科）" onclick="entryChange1();" />
@@ -514,7 +514,7 @@
 								<option value="2／22（土）">2／22（土）</option>
 								<option value="3／15（日）">3／15（日）</option>
 							</select></td>
-						  </tr>
+						  </tr><br>
 						  <tr id="secondBox">
 							<th>参加希望日 看護学科(<span class="red">*</span>)</th>
 							<td><select name="参加希望日 看護学科" size="1">
@@ -531,16 +531,16 @@
 								<option value="2／22（土）">2／22（土）</option>
 							</select></td>
 						  </tr>
-						  <tr>
+						  <tr><br>
 							<th>今回の参加は…(<span class="red">*</span>)</th>
 							<td><input type="radio" name="今回の参加は" value="全体会からの参加" />
-							  全体会からの参加<br />
+							  全体会からの参加
 							  <input type="radio" name="今回の参加は" value="体験実習からの参加 " />
 							  体験実習からの参加 
 							  <p class="font_s red">※今年度はじめての参加の方は、「全体会からの参加」をお願いします。</p></td>
 						  </tr>
 						  <tr>
-							<th>オープンキャンパス参加歴(<span class="red">*</span>)</th>
+							<th>オープンキャンパス参加歴(<span class="red">*</span>)</th><br>
 							<td><input type="radio" name="オープンキャンパス参加歴" value="今回が初めて" />
 							  今回が初めて<br />
 							  <input type="radio" name="オープンキャンパス参加歴" value="1回" />
@@ -571,7 +571,7 @@
 							<th>ご質問</th>
 							<td><textarea name="ご質問" rows="3" cols="35"></textarea></td>
 						  </tr>
-						</table>
+					</div>
 						<p>※ご記入いただきました個人情報は、漏えい・流用等がないように、学校法人八文字学園にて厳重に管理させていただきます。</p>
 						<h4>電話によるお申し込みも行っております。</h4>
 						<p>お問合わせ先　029-221-8800（代表）</p>
