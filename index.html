@@ -60,7 +60,6 @@
 			</div>
 		</div>
 	</div>
-
 	<div class="header-sp only-mobile">
 		<div class="header-sp-image">
 			<img src="./image/logo.png">
@@ -71,22 +70,15 @@
 			<label class="nav-unshown" id="nav-close" for="nav-input"></label>
 			<div id="nav-content">
 				<a href="#1" style="margin-top:40px;" class="link"><p class="nav-content_pf">目指せる資格</p></a><br>
-				<a href="#2"><p class="nav-content_pf" class="link">カリキュラム</p></a><br>
-				<a href="#3"><p class="nav-content_pf" class="link">本校の強み</p></a><br>
-				<a href="#4"><p class="nav-content_pf" class="link">卒業生の声</p></a><br>
-				<a href="#5"><p class="nav-content_pf" class="link">オープンキャンパス日程</p></a><br>
-				<a href="#form"><p class="nav-content_pf" class="link">お問い合わせ</p></a><br>
+				<a href="#2" class="link"><p class="nav-content_pf">カリキュラム</p></a><br>
+				<a href="#3" class="link"><p class="nav-content_pf">本校の強み</p></a><br>
+				<a href="#4" class="link"><p class="nav-content_pf">卒業生の声</p></a><br>
+				<a href="#5" class="link"><p class="nav-content_pf">オープンキャンパス日程</p></a><br>
+				<a href="#form" class="link"><p class="nav-content_pf">お問い合わせ</p></a><br>
 			</div>
 		</div>
 	</div>
-	<script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
-	<script>
-		$(function(){
-			$(".link").on("click", function() {
-				$("#nav-input").prop("checked", false);
-			});
-		});
-	</script>
+<div class="content">
 	<div class="top_sp only-mobile">
 			<div class="top_sp__content__inner">
 				<h2>人の命を支えるのが<br>あなたの仕事になる</h2>
@@ -122,7 +114,6 @@
 			</div>
 		</div>
 	</div>
-
 	<div class="lpcontent" id="1">
 		<div class="lpcontent__inner">
 			<div class="lpcontent__content">
@@ -220,6 +211,7 @@
 				</div>
 			</div>
 		</div>
+		
 		<div class="lpcontent__inner" id="3">
 			<div class="lpcontent__content">
 				<div class="lpcontent__content-title">
@@ -249,6 +241,7 @@
 				</div>
 			</div>
 		</div>
+		
 		<div class="lpcontent__inner">
 			<div class="lpcontent__content">
 				<div class="lpcontent__content-contens">
@@ -264,6 +257,7 @@
 				</div>
 			</div>
 		</div>
+		
 		<div class="lpcontent__inner">
 			<div class="lpcontent__content">
 				<div class="lpcontent__content-title2">
@@ -321,6 +315,7 @@
 				</div>
 			</div>
 		</div>
+		
 		<div class="lpcontent__inner">
 			<div class="lpcontent__content">
 				<div class="lpcontent__content-title2">
@@ -355,6 +350,7 @@
 				</div>
 			</div>
 		</div>
+		
 		<div class="lpcontent__inner　w100">
 			<div class="lpcontent__content">
 				<div class="lpcontent__content-addcn">
@@ -369,6 +365,7 @@
 				</div>
 			</div>
 		</div>
+		
 		<div class="lpcontent__inner" id="4">
 			<div class="lpcontent__content">
 				<div class="lpcontent__content-title2">
@@ -408,6 +405,7 @@
 				</div>
 			</div>
 		</div>
+		
 		<div class="lpcontent__inner mt--80" id="5">
 			<div class="lpcontent__content">
 				<div class="lpcontent__content-title2">
@@ -459,6 +457,7 @@
 				</div>
 			</div>
 		</div>		
+		
 		<div class="lpcontent__inner" id="form">
 			<div class="lpcontent__content">
 					<div class="lpcontent__content-title2 form-title">
@@ -650,12 +649,19 @@
 			</div>
 		</div>
 	</div>
-	<script
-  src="https://code.jquery.com/jquery-3.4.1.min.js"
-  integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
-  crossorigin="anonymous"></script>
-	<script src="./script.js"></script>
-
+</div>
+<script
+src="https://code.jquery.com/jquery-3.4.1.min.js"
+integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
+crossorigin="anonymous"></script>
+<script src="./script.js"></script>
+<script>
+	$(function(){
+		$(".link").on("click", function() {
+			$("#nav-input").prop("checked", false);
+		});
+	});
+</script>
 <script>
 var mySwiper = new Swiper('.swiper-container', {
 	centeredSlides: true,

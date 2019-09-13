@@ -790,6 +790,12 @@ textarea {
 .f-none{
     display: none;
 }
+.mt-fix50{
+    height: 50px;
+}
+.mt-fix90{
+    height: 90px;
+}
 /* コンテンツここまで */
 /* ポップアップ */
 .popup {
