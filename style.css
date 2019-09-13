@@ -71,21 +71,14 @@ header{
     padding: 5px 10%;
     border-radius: 20px;
     background: #ff6473;
+    text-align: center;
 }
 .header__inner-content-button > a{
     color: #fff;
 }
 /* スマホヘッダー */
 .header-sp {
-    display: flex;
-    flex-wrap: wrap;
-    align-items: center;
-    justify-content: space-between;
-    position: fixed;
-    height: 45px;
-    margin: -80px 0 0 0;
-    padding: 5px 5%;
-    background: #fff;
+    display: none;
 }
 .top_sp__content__inner{
     margin-top: 80px;
@@ -430,7 +423,7 @@ li.menu__single:hover ul.menu__second-level {
 }
 .lpcontent__content-contens-st-img > img{
     width: 110%;
-    margin-top: -35%;
+    margin-top: -22%;
 }
 .lpcontent__content-contens-st-ucontent{
     display: flex;
@@ -597,7 +590,7 @@ li.menu__single:hover ul.menu__second-level {
     margin: 0 0 80px 0;
 }
 .openc{
-    height: 300px;
+    height: 350px;
     margin: 0 0 80px 0;
     padding: 50px 0;
     background-image: url("./image/openc.png");
