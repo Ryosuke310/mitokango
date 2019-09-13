@@ -525,6 +525,9 @@ li.menu__single:hover ul.menu__second-level {
 .lpcontent__content-contens-4 > p > img{
     width: 100%;
 }
+.none{
+    display: none;
+}
 .lpcontent__content-contens-5 > p{
     width: 47%;
     margin-right: 6px;

@@ -70,16 +70,23 @@
 			<label id="nav-open" for="nav-input"><span></span></label>
 			<label class="nav-unshown" id="nav-close" for="nav-input"></label>
 			<div id="nav-content">
-				<a href="#1" style="margin-top:40px;"><p class="nav-content_pf">目指せる資格</p></a><br>
-				<a href="#2"><p class="nav-content_pf">カリキュラム</p></a><br>
-				<a href="#3"><p class="nav-content_pf">本校の強み</p></a><br>
-				<a href="#4"><p class="nav-content_pf">卒業生の声</p></a><br>
-				<a href="#5"><p class="nav-content_pf">オープンキャンパス日程</p></a><br>
-				<a href="#form"><p class="nav-content_pf">お問い合わせ</p></a><br>
+				<a href="#1" style="margin-top:40px;" class="link"><p class="nav-content_pf">目指せる資格</p></a><br>
+				<a href="#2"><p class="nav-content_pf" class="link">カリキュラム</p></a><br>
+				<a href="#3"><p class="nav-content_pf" class="link">本校の強み</p></a><br>
+				<a href="#4"><p class="nav-content_pf" class="link">卒業生の声</p></a><br>
+				<a href="#5"><p class="nav-content_pf" class="link">オープンキャンパス日程</p></a><br>
+				<a href="#form"><p class="nav-content_pf" class="link">お問い合わせ</p></a><br>
 			</div>
 		</div>
 	</div>
-
+	<script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+	<script>
+		$(function(){
+			$(".link").on("click", function() {
+				$("#nav-input").prop("checked", false);
+			});
+		});
+	</script>
 	<div class="top_sp only-mobile">
 			<div class="top_sp__content__inner">
 				<h2>人の命を支えるのが<br>あなたの仕事になる</h2>
