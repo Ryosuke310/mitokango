@@ -121,7 +121,7 @@ header{
     display: inline-block;
     width: 30px;
     height: 30px;
-    margin: 0 0 0 28% ;
+    margin: 10px 0 0 20% ;
     vertical-align: middle;
   }
   #nav-open span, #nav-open span:before, #nav-open span:after {
