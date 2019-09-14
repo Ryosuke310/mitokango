@@ -796,6 +796,10 @@ textarea {
 .mt-fix90{
     height: 90px;
 }
+.thanks{
+    margin: 40px 0 0 0;
+    text-align: center;
+}
 /* コンテンツここまで */
 /* ポップアップ */
 .popup {
@@ -1063,7 +1067,7 @@ textarea {
         padding: 20px 2%;
     }
     .form-title > img{
-        width: 80%;
+        width: 85%;
         margin: 0 0 20px 0;
     }
 }
